@@ -11,7 +11,7 @@ const server = express();
 server.use(express.json());
 server.use(cors());
 
-// server.use("/auth", authRouter);
+server.use("/auth", authRouter);
 server.use("/users", usersRouter);
 // server.use("/positions", positionsRouter);
 // server.use("/departments", departmentsRouter);
